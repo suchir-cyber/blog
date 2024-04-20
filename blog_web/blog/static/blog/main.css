@@ -1,5 +1,5 @@
 body {
-    background: #fafafa;
+    background-color: rgb(34, 33, 33) !important; 
     color: #333333;
     margin-top: 5rem;
   }
@@ -13,7 +13,7 @@ body {
   }
   
   .bg-steel {
-    background-color: #5f788a;
+    background-color: #494b4d;
   }
   
   .site-header .navbar-nav .nav-link {
@@ -37,7 +37,7 @@ body {
   }
   
   .article-title {
-    color: #444444;
+    color: white;
   }
   
   a.article-title:hover {
@@ -47,6 +47,7 @@ body {
   
   .article-content {
     white-space: pre-line;
+    color: white;
   }
   
   .article-img {
@@ -58,8 +59,9 @@ body {
   .article-metadata {
     padding-bottom: 1px;
     margin-bottom: 4px;
-    border-bottom: 1px solid #e3e3e3
+    border-bottom: 1px solid #e3e3e3;
   }
+
   
   .article-metadata a:hover {
     color: #333;
@@ -87,6 +89,12 @@ body {
     margin-top: 80px;
   }
 
+  .horizontal-line {
+    border: none; /* Remove default border */
+    border-top: 2px solid rgb(208, 208, 208); /* Set top border with desired width and color */
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
   #logout-form {
     display: inline;
   }
@@ -100,20 +108,33 @@ body {
 
   
 /* Style for pagination buttons */
+
+.pagination_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .pagination-btn {
   display: inline-block;
-  margin-right: 5px;
-  padding: 8px 12px;
-  background-color: #007bff;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 10px 10px !important;
+  background-color: #393a3b !important;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 50% !important;
   text-decoration: none;
+  margin-top: 2px;
 }
+
+.pagination_box a{
+  margin-bottom: 2px !important;
+} 
 
 /* Style for active pagination button */
 .pagination-btn.active {
-  background-color: #0056b3;
+  background-color: #313132 !important;
 }
 
 /* Style for disabled pagination button */
@@ -122,12 +143,26 @@ body {
   cursor: not-allowed;
 }
 
+.btn-outline-info{
+  border-color: #656569 !important;
+}
+
 /* Style for pagination buttons on hover */
 .pagination-btn:hover {
-  background-color: #0056b3;
+  background-color: white;
+  box-shadow: 0 0 10px white ;
 }
 
 /* Style for previous and next pagination buttons */
 .pagination-btn.prev-next {
   margin: 0 10px;
+}
+
+.media{
+  border-radius: 10px;
+  background-color: #3f3e3e;
+}
+
+.media:hover{
+  box-shadow:  0 0 10px white
 }
